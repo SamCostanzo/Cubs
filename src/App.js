@@ -3,14 +3,18 @@ import players from './players';
 
 
 // App Components
-// import Header from './components/Header';
+import Header from './components/Header';
 import Gallery from './components/Gallery';
-
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="container">
-      <Gallery players={players}/>
+      <Header 
+        title={'The Chicago Cubs'}   
+        />
+      <Gallery players={players} />
+      <Footer />
     </div>
   );
 }

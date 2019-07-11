@@ -1,20 +1,27 @@
 import React from 'react';
 
+
+
 const Player = (props) => {
     
-    // let img = require(props.url);
     return (
         <div className="playerCard">
             <div>
                 <img src={props.url} alt={props.name} />
-                {/* <img src={require('../img/rizzo.jpg')} /> */}
             </div>
             <h2>{props.name}</h2>
-            <h3>Player Profile</h3>
+            <h2 id="number">{props.number}</h2>
             <ul>
-                <li><strong>Number: </strong>{props.number}</li>
                 <li><strong>Position: </strong>{props.position}</li>
+                {/* <li><strong>PLACE HOLDER</strong></li> */}
+                <li><strong>Origin: </strong>{props.origin}</li>
+                <li><strong>DOB: </strong>{props.DOB}</li>
+
+
+                {/* Add more stuff here */}
             </ul>
+
+            <img src='./img/bear.jpg' id='bear'/>
         </div>
     );
 }

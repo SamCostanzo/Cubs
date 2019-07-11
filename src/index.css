@@ -1,14 +1,70 @@
-body {
-  background: #edeff0;
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/********** FONTS **********/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/fonts/OpenSans-ExtraBoldItalic.ttf'); /* IE9 Compat Modes */
+  src: local('Open Sans'), local('OpenSans'),
+       url('../src/fonts/OpenSans-ExtraBoldItalic.ttf') format('woff2'), /* Super Modern Browsers */
+       url('../src/fonts/OpenSans-ExtraBoldItalic.ttf') format('woff'), /* Modern Browsers */
+       url('../src/fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/fonts/Lora-Regular.ttf'); /* IE9 Compat Modes */
+  src: local('Open Sans'), local('OpenSans'),
+       url('../src/fonts/Lora-Regular.ttf') format('woff2'), /* Super Modern Browsers */
+       url('../src/fonts/Lora-Regular.ttf') format('woff'), /* Modern Browsers */
+       url('../src/fonts/Lora-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
 
-/* .header {
-  text-align: center;
-} */
+/* Cubs Red and Blue
+ #0E3386
+ #CC3433 */
 
+
+
+
+body {
+  background: rgb(153, 182, 207);
+  margin: 0;
+  font-family: 'Lora';
+}
+
+
+/********** HEADER **********/
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  color: #0E3386;
+  font-weight: bold 500;
+  font-size: 3.5em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.header p {
+  /* color: #CC3433; */
+  color: #0E3386;
+  padding-top: 0px;
+  font-family: 'Lora';
+  font-size: 1.2em;
+  padding-bottom: 12px;
+}
+
+
+
+
+/********** GALLERY **********/
 
 .gallery {
   width: 90%;
@@ -22,48 +78,173 @@ body {
 .playerCard {
   box-sizing: border-box;
   background: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-  list-style-type: none;
+  box-shadow: 7px 7px 5px lightslategray;
+  border-radius: 10px 10px 10px 10px;
+  max-height: 600px;
+/* TIP FOR FUTURE - Setting the max height above connects to the amout of text you want to put in the card. If it starts to overlap and go below the card, increase the max height */
 }
 
-.playerCard div {
+
+/********** FOOTER **********/
+
+.footer {
   text-align: center;
-  padding: 1em;
-  background-color: #000;
-  margin-bottom: 1.5em;
+  font-family: 'Lora';
 }
 
-h2 {
+
+
+/********** PLAYER STATS AND INFO **********/
+.playerCard li {
+  list-style-type: none;
+  font-family: 'Lora';
+  font-weight: 400;
+}
+
+
+/********** PLAYERS NAME **********/
+.playerCard h2 {
+  text-align: left;
+  color: #000;
+  line-height: 1;
+  font-family: 'Lora';
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: 500; /* Add bold here if needed */
+  letter-spacing: -0.2px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+#number {
+  display: inline;
+  margin-right: auto;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-left: 0;
+  margin-left: 0;
+  padding-top: 5px;
+  float: right;
   font-size: 2em;
-  margin-bottom: 8px;
-  color: #384047;
-  line-height: 1.2;
-  margin-top: 5px;
+  font-family: 'Lora';
 }
 
-h3 {
-  margin-top: 1.5em;
-  margin-bottom: 0;
+
+/********** ON HOVER **********/
+
+.playerCard:hover {
+  transform: scale(1.02);
+  box-shadow: 9px 9px 5px lightslategray;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
 }
+
+
+/********** THE PICTURE **********/
+
+/* .playerCard div {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+  height: 400px;
+} */
+
+.playerCard img {
+  width: 100%;
+  /* height: 60%; */
+  border-radius: 10px 10px 0px 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+  height: 210px;
+}
+
+
+
+/********** LIST STUFF **********/
 
 ul {
   padding: 0 0 0 1em;
-  margin-top: 0.85em;
+  margin-top: 1em;
 }
 
 li {
   margin-bottom: 0.5em;
 }
 
-p {
-  color: #222;
-  font-size: 1em;
-  margin-bottom: 15px;
-  line-height: 1.4;
+
+/********** BEAR LOGO **********/
+
+#bear {
+  height: 55px;
+  width: 55px;
+  float: right;
+  border-radius: 10px 10px 10px 10px;
+  padding-top: 0px;
 }
 
-img {
-  width: 150px;
+
+
+
+
+
+
+
+/* Trying stuff */
+
+
+
+/*
+h2, h4, p, ul, li {
+  margin: 0;
+  padding: 0;
 }
+
+h2, h4 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  /* color: $d1; 
+}
+
+
+h2 {
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  margin-bottom: 10px;
+}
+
+p, li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  /* color: $d2; 
+  line-height: 22px;
+}
+
+
+ul, li {
+  text-decoration: none;
+  list-style: disc outside;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+body {
+  background-image: linear-gradient(140deg, $l1, $l2);
+  margin: 0;
+  width: 100vw;
+  min-height: 450px;
+  height: 100vh;
+  /* display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+*/
