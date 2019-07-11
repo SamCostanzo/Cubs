@@ -120,7 +120,7 @@ const players = [
         id: '14',
         name: 'Ben Zobrist',
         number: '18',
-        position: '2B, outfield',
+        position: '2B, Outfield',
         DOB: 'May 26th, 1981',
         origin: 'Eureka, Illinois',
         url: './img/zobrist.jpg' 
@@ -129,7 +129,7 @@ const players = [
         id: '15',
         name: 'Ian Happ',
         number: '8',
-        position: '2B, outfield',
+        position: '2B, Outfield',
         DOB: 'August 12th, 1994',
         origin: 'Pittsburgh, Pennsylvania',
         url: './img/happ.jpg' 
